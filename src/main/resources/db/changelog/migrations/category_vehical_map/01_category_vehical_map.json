@@ -1,0 +1,24 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "category-vehical-map-1",
+        "author": "skyware",
+        "validCheckSum": "ANY",
+        "changes": [
+          {
+            "createTable": {
+              "tableName": "category_vehical_map",
+              "columns": [
+                { "column": { "name": "id", "type": "BIGINT", "autoIncrement": true, "constraints": { "primaryKey": true } } },
+                { "column": { "name": "category_id", "type": "BIGINT" } },
+                { "column": { "name": "vehical_id", "type": "BIGINT" } },
+                { "column": { "name": "status", "type": "TINYINT" } }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "category-1",
+        "author": "skyware",
+        "validCheckSum": "ANY",
+        "changes": [
+          {
+            "createTable": {
+              "tableName": "category",
+              "columns": [
+                { "column": { "name": "id", "type": "BIGINT", "autoIncrement": true, "constraints": { "primaryKey": true } } },
+                { "column": { "name": "category_name", "type": "VARCHAR(255)" } },
+                { "column": { "name": "short_name", "type": "VARCHAR(255)" } },
+                { "column": { "name": "status", "type": "TINYINT" } }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

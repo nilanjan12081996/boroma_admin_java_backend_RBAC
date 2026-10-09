@@ -1,0 +1,24 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "vehicale-image-1",
+        "author": "skyware",
+        "validCheckSum": "ANY",
+        "changes": [
+          {
+            "createTable": {
+              "tableName": "vehicale_image",
+              "columns": [
+                { "column": { "name": "id", "type": "BIGINT", "autoIncrement": true, "constraints": { "primaryKey": true } } },
+                { "column": { "name": "vehicle_id", "type": "BIGINT" } },
+                { "column": { "name": "image", "type": "VARCHAR(255)" } },
+                { "column": { "name": "status", "type": "TINYINT" } }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

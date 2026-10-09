@@ -1,0 +1,24 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "vehicle-info-1",
+        "author": "skyware",
+        "validCheckSum": "ANY",
+        "changes": [
+          {
+            "createTable": {
+              "tableName": "vehicle_info",
+              "columns": [
+                { "column": { "name": "id", "type": "BIGINT", "autoIncrement": true, "constraints": { "primaryKey": true } } },
+                { "column": { "name": "vehicle_no", "type": "VARCHAR(255)", "constraints": { "unique": true } } },
+                { "column": { "name": "no_of_seat", "type": "INT", "constraints": { "nullable": true } } },
+                { "column": { "name": "status", "type": "TINYINT", "defaultValueNumeric": 1 } }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
