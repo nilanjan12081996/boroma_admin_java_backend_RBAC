@@ -2,6 +2,7 @@ package skyware.product.skywareapi.sidebar.mapper;
 
 
 import skyware.product.skywareapi.sidebar.dto.SidebarDto;
+import skyware.product.skywareapi.sidebar.dto.SubSidebarResponseDto;
 import skyware.product.skywareapi.sidebar.entity.SidebarEntity;
 
 public final class SidebarMapper {
@@ -24,6 +25,24 @@ public final class SidebarMapper {
                 .isActive(entity.getIsActive())
                 .createdAt(entity.getCreatedAt())
                 .updatedAt(entity.getUpdatedAt())
+                .build();
+    }
+
+    public static SubSidebarResponseDto toSubSidebarResponseDto(SidebarEntity subSidebar, SidebarEntity parentSidebar) {
+        if (subSidebar == null) {
+            return null;
+        }
+
+        return SubSidebarResponseDto.builder()
+                .id(subSidebar.getId())
+                .name(subSidebar.getName())
+                .shortName(subSidebar.getShortName())
+                .parentId(subSidebar.getParentId())
+                .statusId(subSidebar.getStatusId())
+                .isActive(subSidebar.getIsActive())
+                .createdAt(subSidebar.getCreatedAt())
+                .updatedAt(subSidebar.getUpdatedAt())
+                .parentSidebar(parentSidebar)
                 .build();
     }
 
