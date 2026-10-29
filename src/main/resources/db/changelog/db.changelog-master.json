@@ -80,6 +80,30 @@
     },
     {
       "include": {
+        "file": "migrations/vehical_tax/01_vehical_tax.json",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "migrations/vehical_polution/01_vehical_polution.json",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "migrations/vehical_permit/01_vehical_permit.json",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "migrations/vehical_fitness/01_vehical_fitness.json",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
         "file": "seeder/01_superadmin_seeder.json",
         "relativeToChangelogFile": true
       }

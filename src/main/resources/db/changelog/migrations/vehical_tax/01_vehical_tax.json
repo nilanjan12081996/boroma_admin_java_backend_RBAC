@@ -1,0 +1,73 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "vehical-tax-1",
+        "author": "skyware",
+        "validCheckSum": "ANY",
+        "changes": [
+          {
+            "createTable": {
+              "tableName": "vehical_tax",
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "type": "BIGINT",
+                    "autoIncrement": true,
+                    "constraints": {
+                      "primaryKey": true,
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "vehical_id",
+                    "type": "BIGINT",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "document_url",
+                    "type": "BIGINT"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "exp_date",
+                    "type": "DATE"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "status",
+                    "type": "TINYINT",
+                    "defaultValueNumeric": 1
+                  }
+                },
+                {
+                  "column": {
+                    "name": "created_at",
+                    "type": "TIMESTAMP",
+                    "defaultValueComputed": "CURRENT_TIMESTAMP"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "updated_at",
+                    "type": "TIMESTAMP",
+                    "defaultValueComputed": "CURRENT_TIMESTAMP"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
