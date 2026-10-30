@@ -68,6 +68,20 @@
           }
         ]
       }
+    },{
+      "changeSet": {
+        "id": "vehical-fitness-2",
+        "author": "skyware",
+        "changes": [
+          {
+            "modifyDataType": {
+              "tableName": "vehical_fitness",
+              "columnName": "document_url",
+              "newDataType": "VARCHAR(255)"
+            }
+          }
+        ]
+      }
     }
   ]
 }

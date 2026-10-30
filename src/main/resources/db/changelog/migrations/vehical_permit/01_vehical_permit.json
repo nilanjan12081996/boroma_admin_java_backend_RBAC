@@ -68,6 +68,21 @@
           }
         ]
       }
+    },
+    {
+      "changeSet": {
+        "id": "vehical-permit-2",
+        "author": "skyware",
+        "changes": [
+          {
+            "modifyDataType": {
+              "tableName": "vehical_permit",
+              "columnName": "document_url",
+              "newDataType": "VARCHAR(255)"
+            }
+          }
+        ]
+      }
     }
   ]
 }
