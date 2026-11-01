@@ -1,0 +1,109 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "driver-1",
+        "author": "skyware",
+        "validCheckSum": "ANY",
+        "changes": [
+          {
+            "createTable": {
+              "tableName": "driver",
+              "columns": [
+                {
+                  "column": {
+                    "name": "id",
+                    "type": "INT",
+                    "autoIncrement": true,
+                    "constraints": {
+                      "primaryKey": true,
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "driver_name",
+                    "type": "VARCHAR(255)",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "driver_phone",
+                    "type": "VARCHAR(20)",
+                    "constraints": {
+                      "unique": true,
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "driver_email",
+                    "type": "VARCHAR(255)",
+                    "constraints": {
+                      "unique": true,
+                      "nullable": true
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "password",
+                    "type": "VARCHAR(255)",
+                    "constraints": {
+                      "nullable": false
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "otp",
+                    "type": "BIGINT",
+                    "constraints": {
+                      "nullable": true
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "otp_exp",
+                    "type": "DATETIME",
+                    "constraints": {
+                      "nullable": true
+                    }
+                  }
+                },
+                {
+                  "column": {
+                    "name": "status",
+                    "type": "TINYINT",
+                    "defaultValueNumeric": 0
+                  }
+                },
+                {
+                  "column": {
+                    "name": "created_at",
+                    "type": "DATETIME",
+                    "defaultValueComputed": "CURRENT_TIMESTAMP"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "updated_at",
+                    "type": "DATETIME",
+                    "defaultValueComputed": "CURRENT_TIMESTAMP"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+
