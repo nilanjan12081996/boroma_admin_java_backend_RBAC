@@ -33,7 +33,7 @@
                 {
                   "column": {
                     "name": "doc_type",
-                    "type": "ENUM('L', 'A')",
+                    "type": "ENUM('L', 'A', 'BK')",
                     "constraints": {
                       "nullable": false
                     }
@@ -80,7 +80,22 @@
           }
         ]
       }
+    },
+    {
+      "changeSet": {
+        "id": "driver-details-2",
+        "author": "skyware",
+        "validCheckSum": "ANY",
+        "changes": [
+          {
+            "modifyDataType": {
+              "tableName": "driver_details",
+              "columnName": "doc_type",
+              "newDataType": "ENUM('L', 'A', 'BK') NOT NULL"
+            }
+          }
+        ]
+      }
     }
   ]
 }
-
