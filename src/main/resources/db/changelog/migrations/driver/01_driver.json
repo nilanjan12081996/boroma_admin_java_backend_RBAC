@@ -103,7 +103,28 @@
           }
         ]
       }
+    },
+    {
+      "changeSet": {
+        "id": "driver-2",
+        "author": "skyware",
+        "validCheckSum": "ANY",
+        "changes": [
+          {
+            "addColumn": {
+              "tableName": "driver",
+              "columns": [
+                {
+                  "column": {
+                    "name": "profile_img",
+                    "type": "VARCHAR(255)"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
     }
   ]
 }
-

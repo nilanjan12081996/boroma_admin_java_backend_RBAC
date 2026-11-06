@@ -104,6 +104,18 @@
     },
     {
       "include": {
+        "file": "migrations/vehicle_insurance/01_vehicle_insurance.json",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "migrations/vehicle_rc/01_vehicle_rc.json",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
         "file": "migrations/driver/01_driver.json",
         "relativeToChangelogFile": true
       }
