@@ -137,6 +137,12 @@
         "file": "seeder/02_role_seeder.json",
         "relativeToChangelogFile": true
       }
+    },
+    {
+      "include": {
+        "file": "migrations/company_operator_admin/company_operator_admin.json",
+        "relativeToChangelogFile": true
+      }
     }
   ]
 }
