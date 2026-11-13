@@ -143,6 +143,18 @@
         "file": "migrations/company_operator_admin/company_operator_admin.json",
         "relativeToChangelogFile": true
       }
+    },
+    {
+      "include": {
+        "file": "migrations/guest/01_guest.json",
+        "relativeToChangelogFile": true
+      }
+    },
+    {
+      "include": {
+        "file": "migrations/booking/01_booking.json",
+        "relativeToChangelogFile": true
+      }
     }
   ]
 }
