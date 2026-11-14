@@ -99,7 +99,23 @@
           }
         ]
       }
+    },
+    {
+      "changeSet": {
+        "id": "booking-2",
+        "author": "skyware",
+        "validCheckSum": "ANY",
+        "changes": [
+          {
+            "renameColumn": {
+              "tableName": "booking",
+              "oldColumnName": "car_type",
+              "newColumnName": "vehicle_type",
+              "columnDataType": "VARCHAR(100)"
+            }
+          }
+        ]
+      }
     }
   ]
 }
-
