@@ -155,6 +155,12 @@
         "file": "migrations/booking/01_booking.json",
         "relativeToChangelogFile": true
       }
+    },
+    {
+      "include": {
+        "file": "migrations/booking/02_booking_assign_transport.json",
+        "relativeToChangelogFile": true
+      }
     }
   ]
 }
